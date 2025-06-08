@@ -1,0 +1,77 @@
+## Build results
+[Bb]in/
+[Oo]bj/
+
+## Rider
+.idea/
+*.sln.iml
+
+## Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Visual Studio Code
+.vscode/
+
+## ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+## dotCover
+.idea/dotCover
+
+## Azure Pipelines
+.vsts/
+
+## Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+## Office temp files
+~$*
+
+## ASP.NET temporary files
+**/App_Data/
+**/App_Start/
+
+## NuGet Packages
+*.nupkg
+*.snupkg
+# NuGet v3 folder-based cache
+~/.nuget/packages/
+packages/
+*.nuspec
+
+## Entity Framework
+**/*.dbmdl
+**/*.jfm
+
+## Logs
+*.log
+
+## User-specific files
+*.swp
+*.bak
+*.tmp
+*.tmp.*
+*.~*
+
+## dotnet CLI
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+## Coverage
+coverage/
+*.coverage
+*.coveragexml
+
+## Resharper
+_ReSharper*/
+*.DotSettings.user
+
+## File-based secrets
+secrets.json
+appsettings.*.local.json
