@@ -14,7 +14,8 @@ jobs:
 
     steps:
     - name: Print logs
-      run: echo "The deployment environment is ${inputs.environment}"
+      run: |
+        echo "The deployment environment is ${{inputs.environment}}"
 
     - name: Checkout code
       uses: actions/checkout@v3
