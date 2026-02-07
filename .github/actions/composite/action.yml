@@ -1,0 +1,19 @@
+name: "Composite Action"
+description: 'A composite action that combines multiple steps.'
+
+inputs:
+  example-input:
+    description: 'An example input for the composite action'
+    required: true
+    default: 'default value'
+
+runs:
+  using: 'composite'
+  steps:
+    - name: Step 1
+      run: echo "This is step 1"
+      shell: bash
+
+    - name: Step 2
+      run: echo "This is step 2"
+      shell: bash

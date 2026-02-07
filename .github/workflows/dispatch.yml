@@ -1,0 +1,31 @@
+name: Dispatch Workflow
+
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Deployment environment'
+        required: true
+        default: 'dev'
+
+jobs:
+  dispatch:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Print logs
+      run: echo "The deployment environment is ${inputs.environment}"
+
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: 8.0.x
+        
+    - name: Restore dependencies
+      run: dotnet restore
+      
+    - name: Build
+      run: dotnet build --no-restore --configuration Release

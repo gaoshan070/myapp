@@ -1,0 +1,20 @@
+name: "Docker Build and Push"
+description: 'Builds a Docker image and pushes it to a container registry.'
+
+inputs:
+  dockerfile:
+    description: 'Path to the Dockerfile'
+    required: true
+    default: './Dockerfile'
+  context:
+    description: 'Path to the build context'
+    required: true
+    default: './'
+  tags:
+    description: 'Comma-separated list of tags to apply to the image'
+    required: true
+    default: 'latest'
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
